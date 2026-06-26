@@ -127,20 +127,27 @@ open up you local host and port
 
     AWS_REGION = eu-north-1
 
-    AWS_ECR_LOGIN_URI = 566373416292.dkr.ecr.ap-south-1.amazonaws.com
+    AWS_ECR_LOGIN_URI = 597601766655.dkr.ecr.eu-north-1.amazonaws.com
 
     ECR_REPOSITORY_NAME = chicken-class-proj
 
 
 
 
+# AZURE-CICD-Deployment-with-Github-Actions
+
+## Save pass:
+
+s3cEZKH5yytiVnJ3h+eI3qhhzf9q1vNwEi6+q+WGdd+ACRCZ7JD6
+
+
 ## Run from terminal:
 
-docker build -t chickenapp.azurecr.io/chicken:latest .
+docker build -t <YOUR_REGISTRY_NAME>.azurecr.io/chicken:latest .
 
-docker login chickenapp.azurecr.io
+docker login <YOUR_REGISTRY_NAME>.azurecr.io
 
-docker push chickenapp.azurecr.io/chicken:latest
+docker push <YOUR_REGISTRY_NAME>.azurecr.io/chicken:latest
 
 
 ## Deployment Steps:
